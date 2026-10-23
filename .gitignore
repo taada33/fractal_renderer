@@ -1,0 +1,23 @@
+# Vivado generated project files
+.Xil/
+*.jou
+*.log
+*.str
+
+# Vivado generated directories
+*.cache/
+*.runs/
+*.sim/
+*.gen/
+*.hw/
+*.ip_user_files/
+
+# Simulation artifacts
+*.wdb
+*.vcd
+*.vpd
+
+# Temporary files
+*.tmp
+*.bak
+*~
