@@ -16,6 +16,7 @@
 *.wdb
 *.vcd
 *.vpd
+*.pb
 
 # Temporary files
 *.tmp
