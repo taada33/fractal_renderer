@@ -3,7 +3,7 @@
 
 if [ "$1" == "clean" ]; then
     rm -f ./tb/outputs/*
-    echo "Cleaned /tb/outputs"
+    echo "Cleaned tb/outputs"
     exit 0
 fi
 
@@ -29,11 +29,13 @@ case $output in
         fi
     ;;
     file)
+        mkdir -p tb/outputs
         xvlog.bat -sv tb/${tbname}.sv rtl/*.sv > tb/outputs/xvlog.log 2>&1 && 
         xelab.bat ${tbname} -s ${simname} > tb/outputs/xelab.log 2>&1 &&
         xsim.bat ${simname} -R > tb/outputs/${tbname}_output.txt 2>&1
     ;;
     "")
+        mkdir -p tb/outputs
         xvlog.bat -sv tb/${tbname}.sv rtl/*.sv > tb/outputs/xvlog.log 2>&1 && 
         xelab.bat ${tbname} -s ${simname} > tb/outputs/xelab.log 2>&1 &&
         xsim.bat ${simname} -R
