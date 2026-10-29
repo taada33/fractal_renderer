@@ -21,8 +21,8 @@ module mandelbrot #(
     localparam [23:0] xDELTA = {2'b11,{24{1'b0}}}/IMAGE_WIDTH; //fractionally extend 3 (1'b11) by 24 0s; division is done with 32bit int. Q 0.24 is preserved
     localparam [23:0] yDELTA = {4'b1001,{22{1'b0}}}/IMAGE_HEIGHT; //fractionally extend 2.25 (4'b1001) by 22 0s; division is done with 32bit int. Q 0.24 is preserved
 
-    logic signed [BIT_WIDTH-1:0] x; // Q 4.14
-    logic signed [BIT_WIDTH-1:0] y; // Q 4.14
+    logic signed [BIT_WIDTH-1:0] x; // Q 4.14 or M.N
+    logic signed [BIT_WIDTH-1:0] y; // Q 4.14 or M.N
 
     logic signed [2*BIT_WIDTH-1:0] x_next; // Q 8.28 or 2M.2N
     logic signed [2*BIT_WIDTH-1:0] y_next; // Q 8.28 or 2M.2N

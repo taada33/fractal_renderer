@@ -1,7 +1,5 @@
 # Vivado generated project files
 .Xil/
-*.jou
-*.log
 *.str
 
 # Vivado generated directories
@@ -13,10 +11,8 @@
 *.ip_user_files/
 
 # Simulation artifacts
-*.wdb
 *.vcd
 *.vpd
-*.pb
 
 # Temporary files
 *.tmp
@@ -31,3 +27,6 @@ xsim.dir/
 *.pb
 vivado_pid*.zip
 dfx_runtime.txt
+
+# output logs
+*_output.txt
