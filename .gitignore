@@ -22,3 +22,12 @@
 *.tmp
 *.bak
 *~
+
+# Vivado / XSim
+xsim.dir/
+*.wdb
+*.log
+*.jou
+*.pb
+vivado_pid*.zip
+dfx_runtime.txt

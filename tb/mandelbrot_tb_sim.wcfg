@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="mandelbrot_tb_sim.wdb" id="1">
+         <top_modules>
+            <top_module name="mandelbrot_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1.666 ns"></ZoomStartTime>
+      <ZoomEndTime time="11.667 ns"></ZoomEndTime>
+      <Cursor1Time time="10.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/mandelbrot_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_tb/px" type="array">
+      <obj_property name="ElementShortName">px[8:0]</obj_property>
+      <obj_property name="ObjectShortName">px[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_tb/py" type="array">
+      <obj_property name="ElementShortName">py[7:0]</obj_property>
+      <obj_property name="ObjectShortName">py[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_tb/escape_detect" type="logic">
+      <obj_property name="ElementShortName">escape_detect</obj_property>
+      <obj_property name="ObjectShortName">escape_detect</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_tb/mandelbrot_inst/a" type="array">
+      <obj_property name="ElementShortName">a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">a[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_tb/mandelbrot_inst/b" type="array">
+      <obj_property name="ElementShortName">b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">b[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_tb/mandelbrot_inst/x" type="array">
+      <obj_property name="ElementShortName">x[17:0]</obj_property>
+      <obj_property name="ObjectShortName">x[17:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_tb/mandelbrot_inst/y" type="array">
+      <obj_property name="ElementShortName">y[17:0]</obj_property>
+      <obj_property name="ObjectShortName">y[17:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
